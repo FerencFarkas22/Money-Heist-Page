@@ -1,0 +1,103 @@
+@use '../Styles/var.scss';
+@import '../Styles/var.scss';
+
+body ::-webkit-scrollbar {
+    display: none;
+
+}
+
+.navbar {
+    @include var.sizes($width:100%, $height:80px);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1;
+    background-color: var.$opacityDark;
+    position: fixed;
+    .nav-left {
+        height: 90%;
+        @extend %defFlex;
+        color: $light;
+
+        .HamburgerButton {
+            display: none;
+        }
+
+        img {
+            @include var.sizes($width:100px, $height:100px);
+        }
+    }
+
+    .navbar-right {
+        height: 90%;
+        @extend %defFlex;
+
+        a {
+            color: var.$light;
+            text-decoration: none;
+            @include var.box($margin:10px, $padding:10px);
+            font-size: 20px;
+            transition: 0.2s all linear;
+            text-align: center;
+
+            &:hover {
+                background-color: var.$menuHover;
+                border-radius: 5px;
+            }
+        }
+    }
+
+    .navbar-right-none {
+        height: 90%;
+        @extend %defFlex;
+
+        a {
+            color: $light;
+            text-decoration: none;
+            @include var.box($margin:5px, $padding:5px);
+            font-size: 20px;
+            transition: 0.2s all linear;
+            text-align: center;
+
+            &:hover {
+                background-color: var.$menuHover;
+                border-radius: 5px;
+            }
+        }
+    }
+}
+
+@media(max-width: 900px) {
+    .navbar {
+        position: fixed;
+
+        .nav-left {
+            @include var.sizes($width:100%, $height:100%);
+            justify-content: space-around;
+            align-items: center;
+
+            .HamburgerButton {
+                color: var.$light;
+                @include var.sizes($width:30px, $height:30px);
+                @include var.box($padding:0px);
+                display: block;
+                background-color: transparent;
+                border: none;
+            }
+        }
+
+        .navbar-right {
+            flex-direction: column;
+            background-color: var.$dark;
+            @include var.sizes($width:100%, $height:auto);
+            @include var.box($margin:0);
+            position: fixed;
+            top: 70px;
+
+        }
+
+        .navbar-right-none {
+            display: none;
+        }
+    }
+}
