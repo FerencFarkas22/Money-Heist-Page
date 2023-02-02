@@ -1,0 +1,10 @@
+@use './Styles/var.scss';
+
+.App{
+  @include var.sizes();
+font-family: var.$font-families;
+background-color: var.$dark;
+color: var.$light;
+
+
+}
