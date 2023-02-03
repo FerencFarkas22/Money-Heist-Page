@@ -1,0 +1,89 @@
+@use '../Styles/var.scss';
+@import '../Styles//var.scss';
+
+.Story {
+    @extend %defFlex;
+    @include var.sizes($width:100vw, $height:auto);
+    @include var.box($margin:100px 0 0 0, $padding:0px);
+
+    .storyContainer {
+        @include var.sizes($width:90%, $height:auto);
+
+
+        section {
+
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            place-items: center;
+            @include var.box($margin:0 0 100px 0, $padding:10px);
+            border-radius: 10px;
+
+            h2 {
+                text-align: center;
+            }
+
+            img {
+                display: inline;
+                @include var.sizes($width:400px, $height:auto);
+                @extend %setBackground
+            }
+
+            transition: 1s all ease;
+
+            &:hover {
+
+                transition: 1s all ease;
+
+                background-color: var.$black;
+
+            }
+        }
+
+        section:nth-child(odd) {
+            grid-template-columns: 1fr 2fr;
+
+            img {
+                order: 1;
+            }
+
+            .text {
+                order: 2;
+            }
+        }
+    }
+}
+
+@media(max-width:900px) {
+    .Story {
+        .storyContainer{
+            section {
+                grid-template-columns: 1fr;
+            }
+            section:nth-child(odd) {
+                grid-template-columns: 1fr;
+    
+                img {
+                    order: 1;
+                }
+    
+                .text {
+                    order: 2;
+                }
+
+            }
+            section:nth-child(even) {
+                grid-template-columns: 1fr;
+    
+                img {
+                    order: 1;
+                }
+    
+                .text {
+                    order: 2;
+                }
+
+            }
+        }
+        
+    }
+}

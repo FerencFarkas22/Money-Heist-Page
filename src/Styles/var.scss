@@ -1,53 +1,111 @@
-$font-families:'Times New Roman', Times, serif;
+$font-families:'Times New Roman',
+Times,
+serif;
 $dark: #242424;
 $light: #ebebeb;
 $red: rgb(175, 36, 36);
 $opacityDark: #242424c7;
 $menuHover: rgb(27, 20, 20);
 $grey: rgba(255, 255, 255, 0.4);
+$black: black;
 
-
-%setBackground{
-    background-repeat: no-repeat;
-    object-fit: cover;
-    background-position: center;
-    background-size: cover;
+%setBackground {
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-position: center;
+  background-size: cover;
 }
 
-%defFlex{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+%defFlex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 %flex {
-    display: flex;
-    box-sizing: border-box;
-    flex-direction: row;
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: row;
 }
-%button{
-        background-color: $red;
-        color: $light;
-        padding: 10px;
-        margin: 5px 5px 0 0;
-        border-radius: 5px;
-        font-size: 1.1rem;
-        cursor: pointer;
-        text-align: center;
-        border: none;
-        transition: .2s all linear;
-        &:hover {
-            background-color: rgb(43, 22, 22);
-        }
+
+%grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+%button {
+  background-color: $red;
+  color: $light;
+  padding: 10px;
+  margin: 5px 5px 0 0;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  text-align: center;
+  border: none;
+  transition: .2s all linear;
+
+  &:hover {
+    background-color: rgb(43, 22, 22);
+  }
 }
 
 @mixin sizes($width:100vw, $height:100vh) {
-    width: $width;
-    height: $height;
+  width: $width;
+  height: $height;
 
 }
 
 @mixin box($margin:10px, $padding:10px) {
-    margin: $margin;
-    padding: $padding;
+  margin: $margin;
+  padding: $padding;
+}
+
+
+
+
+
+
+@mixin keyframes($moveDown) {
+  @-webkit-keyframes #{$moveDown} {
+    @content;
+  }
+
+  @-moz-keyframes #{$moveDown} {
+    @content;
+  }
+
+  @-ms-keyframes #{$moveDown} {
+    @content;
+  }
+
+  @-o-keyframes #{$moveDown} {
+    @content;
+  }
+
+  @keyframes #{$moveDown} {
+    @content;
+  }
+}
+
+@mixin animation($str) {
+  -webkit-animation: #{$str};
+  -moz-animation: #{$str};
+  -ms-animation: #{$str};
+  -o-animation: #{$str};
+  animation: #{$str};
+}
+
+@include keyframes(slide-down) {
+  0% {
+    margin: -100px 0 100px 0;
+  }
+
+  50% {
+    margin: -120px 0 120px 0;
+  }
+
+  100% {
+    margin: -100px 0 100px 0;
+  }
 }

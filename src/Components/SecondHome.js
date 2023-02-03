@@ -8,15 +8,15 @@ const SecondHome = () => {
             <div className="articles">
 
 
-                {cikkek.map(e => {
+                {cikkek.map((e, index) => {
                     return (
-                        <div className="box">
+                        <div className="box" key={index}>
 
                             <img src={e.image} alt="" />
                             <div className="text">
                                 <h2>{e.articleName}</h2>
                                 <p>{e.description}</p>
-                                <button><a href={e.link}>{e.buttonText}</a></button>
+                                <button><a rel="noreferrer" target="_blank" href={e.link}>{e.buttonText}</a></button>
                             </div>
 
                         </div>

@@ -15,7 +15,7 @@ const Header = ({menu}) => {
     }
 }
 function handleMenuItemClick(){
-  setNavStyle("navbar-right")
+  setNavStyle("navbar-right-none")
 }
 
 
@@ -26,7 +26,7 @@ function handleMenuItemClick(){
             <button onClick={handleNavbarMobile} className="HamburgerButton"><MenuIcon/></button>
         </div>
         <div className={navStyle}>
-          {menu.filter(e=> e.menubar === true).map(e=> <Link to={e.path} onClick={handleMenuItemClick}>{e.name}</Link>)}
+          {menu.filter(e=> e.menubar === true).map((e, index)=> <Link key={index} to={e.path} onClick={handleMenuItemClick}>{e.name}</Link>)}
         </div>
     </div>
   )

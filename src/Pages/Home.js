@@ -6,7 +6,7 @@ import Home1 from '../assets/home1.jpg'
 import Home2 from '../assets/home2.jpg'
 import Home3 from '../assets/home3.jpg'
 import Home4 from '../assets/home4.jpg'
-
+import down from "../assets/down.png"
 import '../Styles/Home.scss'
 
 const Home = () => {
@@ -18,7 +18,7 @@ const Home = () => {
           <Carousel.Item>
             <img
               className="d-block"
-              src={Home1}
+              src={Home3}
               alt="First slide"
             />
           </Carousel.Item>
@@ -33,7 +33,7 @@ const Home = () => {
           <Carousel.Item>
             <img
               className="d-block"
-              src={Home3}
+              src={Home1}
               alt="Third slide"
             />
 
@@ -48,7 +48,9 @@ const Home = () => {
           </Carousel.Item>
         </Carousel>
       </div>
-
+      <div className="icon">
+        <img src={down} alt="" />
+      </div>
 
       <div className="homeContainer">
         <h1>A Nagy Pénzrablás</h1>

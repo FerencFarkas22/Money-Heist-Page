@@ -6,31 +6,29 @@ const Contact = () => {
     <div className='Contact'>
       <h1>Kapcsolat!</h1>
       <div className="container">
-      <div className="box">
-      <div className="image"><img src={image} alt="" /></div>
-      
-      <div className="form">
+
+        <div className="image"><img src={image} alt="" /></div>
+
+
         <form >
-        <h3>Küldj nekünk üzenetet</h3>
+          <h3>Küldj nekünk üzenetet</h3>
           <label name="nev">Név</label>
-          <input type="text" name='nev' placeholder='név'/>
+          <input type="text" name='nev' placeholder='név'  autoComplete="off"/>
           <label name="email">Email</label>
-          <input type="email" name="email" id="" placeholder='email'/>
+          <input type="email" name="email" id="" placeholder='email' />
           <label name="tel">Telefonszám</label>
-          <input type="tel" name="tel" id=""  placeholder='telefonszám'/>
+          <input type="tel" name="tel" id="" placeholder='telefonszám'  autoComplete="off"/>
           <label name="message">Üzenet</label>
-          <textarea name="message" id="" cols="30" rows="5" placeholder='"Üzenet'></textarea>
-          <div>
-          <label>Elfogadom az adatkezelési </label>
-          <input className='checkbox' type="checkbox" name="" id="" />
+          <textarea  autoComplete="off" name="message" id="" cols="10" rows="4" placeholder='"Üzenet'></textarea>
+          <div className='checkbox'>
+            <input type="checkbox" id="scales" name="scales" />
+              <label htmlFor="scales">Elfogadom az adatkezelési feltételeket</label>
           </div>
           <button>Küldés</button>
         </form>
+
       </div>
-      </div>
-      
-      </div>
-     
+
     </div>
   )
 }
