@@ -10,14 +10,15 @@
         @include var.sizes($width:100%, $height:100%);
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-
+        
         .actor {
+            max-width: 100%;
             background-color: $opacityDark;
             border-radius: 10px;
             margin: 10px;
             box-shadow: 0px 5px 20px 5px rgba(0, 0, 0, 0.53);
             transition: .5s all ease;
-
+            
             &:hover {
                 color: var.$dark;
                 background-color: $light;
@@ -37,7 +38,7 @@
         }
 
     }
-
+    
 }
 
 @media(max-width: 1200px) {
@@ -52,6 +53,7 @@
     .Actors {
         .container {
             grid-template-columns: 1fr;
+
         }
     }
 }

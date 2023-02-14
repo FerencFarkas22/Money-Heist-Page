@@ -23,7 +23,7 @@
     .homeContainer {
         position: sticky;
         max-width: 600px;
-        @include var.box($margin:-600px 0 150px 0, $padding:30px);
+        @include var.box($margin:-500px 0 150px 0, $padding:30px);
         text-align: center;
         background-color: $opacityDark;
         border-radius: 15px;

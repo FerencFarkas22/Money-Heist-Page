@@ -3,27 +3,30 @@
 
 .Story {
     @extend %defFlex;
-    @include var.sizes($width:100vw, $height:auto);
+    @include var.sizes($width:100%, $height:auto);
     @include var.box($margin:100px 0 0 0, $padding:0px);
-
+text-align: center;
     .storyContainer {
         @include var.sizes($width:90%, $height:auto);
 
 
         section {
-
-            display: grid;
-            grid-template-columns: 2fr 1fr;
-            place-items: center;
-            @include var.box($margin:0 0 100px 0, $padding:10px);
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            @include var.box($margin:0 0 100px 0, $padding:0);
             border-radius: 10px;
 
             h2 {
                 text-align: center;
             }
+            .text{
+                width: 100%;
+                @include var.box($margin:0, $padding:10px);
 
+            }
             img {
-                display: inline;
+                flex: 100%;
                 @include var.sizes($width:400px, $height:auto);
                 @extend %setBackground
             }
@@ -55,12 +58,15 @@
 
 @media(max-width:900px) {
     .Story {
+      
+        text-align: center;
         .storyContainer{
             section {
-                grid-template-columns: 1fr;
+                display: flex;
+        flex-direction: column;
+
             }
             section:nth-child(odd) {
-                grid-template-columns: 1fr;
     
                 img {
                     order: 1;
@@ -72,7 +78,7 @@
 
             }
             section:nth-child(even) {
-                grid-template-columns: 1fr;
+            
     
                 img {
                     order: 1;
