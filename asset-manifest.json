@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Money-Heist-Page/static/css/main.7528f8e9.css",
+    "main.css": "/Money-Heist-Page/static/css/main.28093d3b.css",
     "main.js": "/Money-Heist-Page/static/js/main.85219485.js",
     "static/media/story3.jpg": "/Money-Heist-Page/static/media/story3.24c042293bc52074145a.jpg",
     "static/media/story2.jpg": "/Money-Heist-Page/static/media/story2.d60a8fc92bf0b15b809b.jpg",
@@ -22,11 +22,11 @@
     "static/media/denver.jpg": "/Money-Heist-Page/static/media/denver.b38125d052b04893cc04.jpg",
     "static/media/Tokio.jpg": "/Money-Heist-Page/static/media/Tokio.a414c40eae70d152cc8b.jpg",
     "index.html": "/Money-Heist-Page/index.html",
-    "main.7528f8e9.css.map": "/Money-Heist-Page/static/css/main.7528f8e9.css.map",
+    "main.28093d3b.css.map": "/Money-Heist-Page/static/css/main.28093d3b.css.map",
     "main.85219485.js.map": "/Money-Heist-Page/static/js/main.85219485.js.map"
   },
   "entrypoints": [
-    "static/css/main.7528f8e9.css",
+    "static/css/main.28093d3b.css",
     "static/js/main.85219485.js"
   ]
 }
