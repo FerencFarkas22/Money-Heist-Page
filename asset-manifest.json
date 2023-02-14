@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/Money-Heist-Page/static/css/main.7528f8e9.css",
+    "main.js": "/Money-Heist-Page/static/js/main.85219485.js",
+    "static/media/story3.jpg": "/Money-Heist-Page/static/media/story3.24c042293bc52074145a.jpg",
+    "static/media/story2.jpg": "/Money-Heist-Page/static/media/story2.d60a8fc92bf0b15b809b.jpg",
+    "static/media/home5.jpg": "/Money-Heist-Page/static/media/home5.662cfe5eff0302a62690.jpg",
+    "static/media/story1.jpg": "/Money-Heist-Page/static/media/story1.662cfe5eff0302a62690.jpg",
+    "static/media/home6.jpg": "/Money-Heist-Page/static/media/home6.648d2586d86d15a2c264.jpg",
+    "static/media/story4.jpg": "/Money-Heist-Page/static/media/story4.13e956ce51cb89ede1f6.jpg",
+    "static/media/home3.jpg": "/Money-Heist-Page/static/media/home3.3254bb9d77635d117675.jpg",
+    "static/media/story5.jpg": "/Money-Heist-Page/static/media/story5.ef214c35d492da4e781e.jpg",
+    "static/media/home7.jpg": "/Money-Heist-Page/static/media/home7.d9accc3467f8e002084e.jpg",
+    "static/media/home2.jpg": "/Money-Heist-Page/static/media/home2.489b36273ef33bb9d9ef.jpg",
+    "static/media/home4.jpg": "/Money-Heist-Page/static/media/home4.7382a99bedc1749c4f7d.jpg",
+    "static/media/home1.jpg": "/Money-Heist-Page/static/media/home1.d77f48a3e830116c2c81.jpg",
+    "static/media/mardird.jpg": "/Money-Heist-Page/static/media/mardird.e08736059ae07f5843db.jpg",
+    "static/media/Logo.png": "/Money-Heist-Page/static/media/Logo.f1597e8e9c88b5830e33.png",
+    "static/media/helsinki.jpg": "/Money-Heist-Page/static/media/helsinki.074789445e5da924e81b.jpg",
+    "static/media/professor.jpg": "/Money-Heist-Page/static/media/professor.c717062d9e9bf6fb5134.jpg",
+    "static/media/murillo.jpg": "/Money-Heist-Page/static/media/murillo.3fa891d76ef5ee88834d.jpg",
+    "static/media/denver.jpg": "/Money-Heist-Page/static/media/denver.b38125d052b04893cc04.jpg",
+    "static/media/Tokio.jpg": "/Money-Heist-Page/static/media/Tokio.a414c40eae70d152cc8b.jpg",
+    "index.html": "/Money-Heist-Page/index.html",
+    "main.7528f8e9.css.map": "/Money-Heist-Page/static/css/main.7528f8e9.css.map",
+    "main.85219485.js.map": "/Money-Heist-Page/static/js/main.85219485.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7528f8e9.css",
+    "static/js/main.85219485.js"
+  ]
+}
